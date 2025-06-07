@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/book.o
+release/bookmodel.o
+release/apiservice.o
+release/bookdialog.o
+release/qrc_resources.o
+release/moc_mainwindow.o
+release/moc_bookmodel.o
+release/moc_apiservice.o
+release/moc_bookdialog.o

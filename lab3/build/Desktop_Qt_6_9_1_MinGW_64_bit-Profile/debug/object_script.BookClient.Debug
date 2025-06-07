@@ -1,0 +1,11 @@
+debug/main.o
+debug/mainwindow.o
+debug/book.o
+debug/bookmodel.o
+debug/apiservice.o
+debug/bookdialog.o
+debug/qrc_resources.o
+debug/moc_mainwindow.o
+debug/moc_bookmodel.o
+debug/moc_apiservice.o
+debug/moc_bookdialog.o

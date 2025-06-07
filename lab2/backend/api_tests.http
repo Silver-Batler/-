@@ -1,0 +1,50 @@
+@hostname = http://localhost:8000
+
+### Получение списка всех книг (List)
+GET {{hostname}}/api/books/
+Content-Type: application/json
+
+### Получение информации о конкретной книге (Retrieve)
+GET {{hostname}}/api/books/1/
+Content-Type: application/json
+
+### Создание новой книги (Create)
+POST {{hostname}}/api/books/
+Content-Type: application/json
+
+{
+    "title": "Война и мир",
+    "author": "Лев Толстой",
+    "publication_year": 1869,
+    "genre": "fiction",
+    "pages": 1225,
+    "rating": 9.5,
+    "is_bestseller": true
+}
+
+### Обновление информации о книге (Update)
+PUT {{hostname}}/api/books/1/
+Content-Type: application/json
+
+{
+    "title": "Война и мир (обновленное издание)",
+    "author": "Лев Толстой",
+    "publication_year": 1869,
+    "genre": "fiction",
+    "pages": 1225,
+    "rating": 9.8,
+    "is_bestseller": true
+}
+
+### Частичное обновление информации о книге (Partial Update)
+PATCH {{hostname}}/api/books/1/
+Content-Type: application/json
+
+{
+    "rating": 10.0
+}
+
+### Удаление книги (Delete)
+DELETE {{hostname}}/api/books/1/
+Content-Type: application/json
+
